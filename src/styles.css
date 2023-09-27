@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: rgb(224, 224, 255);
+    line-height: 1.4em;
+}
+
+header {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+div.characterlist {
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
+} 
+
+ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
