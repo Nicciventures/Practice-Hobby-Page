@@ -3,7 +3,7 @@ body {
     background-color: rgb(224, 224, 255);
     line-height: 1.4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0px;
     padding: 0;
     border: 0;
@@ -34,7 +34,7 @@ div {
 } 
 
 ul.charUl {
-    font-size: 14px;
+    font-size: 13px;
     display: table;
     padding: 10px;
     margin: auto;
