@@ -4,13 +4,14 @@ body {
     line-height: 1.4em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+    text-align: center;
     margin: 0px;
     padding: 0;
     border: 0;
+    width: 100%;
 }
 
 header {
-    text-align: center;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 40px;
@@ -26,7 +27,6 @@ header {
 }
 
 div {
-    text-align: center;
     padding: 10px;
     width: 80%;
     max-width: 500px;
