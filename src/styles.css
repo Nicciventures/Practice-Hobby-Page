@@ -43,7 +43,7 @@ header {
     top: 0;
     width: 100%;
     margin: 0px auto;
-    position: fixed;
+    position: absolute;
 }
 
 div.characterlist {
@@ -79,6 +79,10 @@ div.gallery {
     padding: 10px;
     text-align: center;
     padding-bottom: 10px;
+  }
+
+  summary {
+    padding-bottom: 5px;
   }
   
   th, td {
