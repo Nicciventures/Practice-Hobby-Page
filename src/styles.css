@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+  gap: 10px;
+  padding: 10px;
+}
+
 body {
     background-color: rgb(224, 224, 255);
     line-height: 1.4em;
@@ -9,6 +23,11 @@ body {
     padding: 0;
     border: 0;
     width: 100%;
+    top: 100%;
+    bottom: 100%;
+    right: 90%;
+    left: 90%;
+    overflow: auto;
 }
 
 header {
@@ -17,28 +36,96 @@ header {
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 7px;
-    padding: 20px 0;
-    width: 100%;
-    margin: 0px auto;
-    display: block;
     background-color: rgb(41, 27, 54);
     color: white;
-    position: relative;
+    padding: 20px 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
 }
 
-div {
+div.characterlist {
     padding: 10px;
     width: 80%;
-    max-width: 500px;
+    max-width: 100%;
     margin: 10px auto;
+    margin-top: 30px;
+    position: relative;
 } 
 
-ul.charUl {
-    font-size: 13px;
-    display: table;
+div.gallery {
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+    padding: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid rgb(143, 143, 185);
+  }
+  
+  div.gallery img {
+    width: 225px;
+    height: 300px;
+    object-fit: fill;
+  }
+  
+  div.desc {
     padding: 10px;
-    margin: auto;
-    border: double 5px black;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  th, td {
     text-align: left;
-    list-style-type: none;
-}
+  }
+
+  th {
+    padding-right: 10px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(41, 27, 54);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer a:visited {
+    color: rgb(224, 224, 255);
+  }
