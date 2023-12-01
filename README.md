@@ -1,3 +1,7 @@
+**#Information**
+
+This is just a silly small project for my D&D hobby that I made to try out some basic HTML & CSS things.
+
 # Practice
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
